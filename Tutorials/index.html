@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODISS</title>
+    <link rel="icon" type="image/x-icon" href="./ExternalUtils/images/Layer 1.svg"/>
+    <link rel="shortcut icon" href="./ExternalUtils/images/Layer 1.svg" type="image/x-icon"/>
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/dynContainer.css" />
+  </head>
+  <body class="reactroot">
+    <div class="reacContainertWrapper">
+      <div class="fileNavigator reactNavContainer">
+        <div class="reactHeading">
+          <h1>React Tutorials 3.0</h1>
+          <div id="closeSideMenu" class="arrowBtn" data-open=1>
+            <div class="arrowIcon"></div>
+          </div>
+        </div>
+        <ul class="directory_list" id="directoryList">
+        <!-- Dynamically inserts html through JS -->
+        </ul>
+      </div>
+      <div class="reactDynContainerWrapper">
+        <div class="siteHeader">
+          <div class="sitelogo">
+            <img style="width: 20px; margin-right: 5px; height: auto" src="./ExternalUtils/images/Layer 1.svg"/>
+            CODISS
+          </div>
+          <div class="pageNavigator">
+            <div id="showPrev" class="arrowBtn">
+              <div class="arrowIcon"></div>
+            </div>
+            <div id="showNext" class="arrowBtn right">
+              <div class="arrowIcon"></div>
+            </div>
+          </div>
+        </div>
+        <div id="reactDynContainer">
+        </div>
+      </div>
+    </div>
+
+    <script src="./ExternalUtils/bootstrap.js"></script>
+    <script src="./ExternalUtils/jquery.js"></script>
+    <script src="./Route/route.js"></script>
+    <script src="./utils.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

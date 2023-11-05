@@ -1,0 +1,194 @@
+<div class="template1 theme-dark">
+    <h1>Basics And Core Fundamentals</h1>
+    <p>Make a React folder. And then create an index.html file.</p>
+<!--**************************** CODE BLOCK START ****************************-->
+<figure class="code">
+<pre class="write-html-code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="root"&gt;
+        &lt;h1&gt;Hello World In HTML&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p class="comment">// Ok, so this is how we create h1 tag in html.</p>
+</figure>
+<!--**************************** CODE BLOCK END ****************************-->
+    <p>Now, make the same thing with JavaScript.</p>
+
+<!--**************************** CODE BLOCK START ****************************-->
+<figure class="code">
+<pre class="write-html-code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="root"&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</pre>
+<pre class="write-js-code">
+&lt;script&gt;
+    <span class="comment">// Create Element</span>
+    const header = document.createElement('h1');
+    header.innerText = "Hello world in JS";
+    <span class="comment">// Define Root Element</span>
+    const rootElement = document.getElementById('root');
+    <span class="comment">// Insert header to the root element</span>
+    rootElement.appendChild(header);
+&lt;/script&gt;
+&lt;/html&gt;
+</pre>
+<p class="comment">// Ok, so this is how we create h1 tag using JS.</p>
+</figure>
+<!--**************************** CODE BLOCK END ****************************-->
+<p>Now I hope you are aware about the process of creating element, defining the root element and insert element to the root element.
+    <br/> Good!
+    To start react practice, you can initially use <span class="highlight">CDN links</span> of react to your project. Not suggestable for production. <br/>
+    Reference - <a href="https://legacy.reactjs.org/docs/cdn-links.html" target="_blank">https://legacy.reactjs.org/docs/cdn-links.html</a>
+    <br/>
+    <br/>
+    Add the dependencies at the end of the body (before close tag). See below example.
+</p>
+<!--**************************** CODE BLOCK START ****************************-->
+<figure class="code">
+<pre class="write-html-code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="root"&gt;
+        &lt;h1&gt;Hello World In HTML&lt;/h1&gt;
+    &lt;/div&gt;
+</pre>
+<pre class="write-js-code">
+        &lt;script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"&gt;&lt;/script&gt;
+        &lt;script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"&gt;&lt;/script&gt;
+</pre>
+<pre class="write-html-code">
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</figure>
+<!--**************************** CODE BLOCK END ****************************-->
+<p>When you add this script files, then check them by opening the urls in the browser. They are just a simple script file with javascript code. Some genius facebook programmer had written this files. And we are here to utilize there functions to build large scaled production ready projects.<br/><br/>
+Now the question is why react?<br/><br/>
+The answer is very simple. For a browser the costly and critical task is to render html on runtime. Runtime means when you have clicked any button, certian thing changes in html. At that time, the browser will perform the most costly processing - DOM manipulation. It manupulates the DOM tree and updates the structure.<br/>
+So, meny tech gaints invents their algorithms to optimize the DOM manipulation process. And as we know React comes with the optamized algorithms. That's why we are here to learn React, React powers.<br/><br/>
+Intersting right!<br/>
+React Developers submit two files. <span class="highlight">react.development.js</span> - It comes with core react algorithms. You may heard about react native, used in App. So this file is the common file for both platforms.
+<span class="highlight">react-dom.development.js</span> - This file is responsible for DOM manipulation. It's here for interact with browser, not used in App.<br><br/>
+Now my friend, hold tight. We are going to show first React code. We will make h1 tag using React.
+
+</p>
+<!--**************************** CODE BLOCK START ****************************-->
+<figure class="code">
+<pre class="write-html-code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="root"&gt;
+        &lt;h1&gt;Hello World In HTML&lt;/h1&gt;
+    &lt;/div&gt;
+</pre>
+<pre class="write-js-code">
+        &lt;script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"&gt;&lt;/script&gt;
+        &lt;script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"&gt;&lt;/script&gt;
+        &lt;script&gt;
+            <span class="comment">// Create Element</span>
+            const header = React.createElement("h1", {}, "Hello world in React");
+            <span class="comment">// Define Root Element</span>
+            const root = ReactDOM.createRoot(document.getElementById("root"));
+            <span class="comment">// Insert header to the root element</span>
+            root.render(header);
+        &lt;/script&gt;
+</pre>
+<pre class="write-html-code">
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</figure>
+<!--**************************** CODE BLOCK END ****************************-->
+<p>So, here is the example - how we can create element and insert element in React. This looks similar to js.</p>
+<ul>
+    <li>
+<p><span class="highlight">Create Element - </span> </p>
+<!--**************************** CODE BLOCK START ****************************-->
+<figure class="code">
+<pre class="write-js-code">
+<span class="comment">****************************** In JS ******************************</span>
+const header = document.createElement('h1');
+header.innerText = "Hello world in JS";
+<span class="comment">****************************** In React ******************************</span>
+const header = React.createElement("h1", {}, "Hello world in React");
+</pre>
+</figure>
+<!--**************************** CODE BLOCK END ****************************-->
+<p class="mb-10">In React, the core file named <strong>react.development.js</strong> it gives an object React. It has a function named createElement which do the similar thing like document.createElement. It takes three parameters: 1. the html tag, 2. an object, 3. inner text</p>
+<br/>
+    </li>
+    <li>
+<p><span class="highlight">Define Root Element - </span> </p>
+<!--**************************** CODE BLOCK START ****************************-->
+<figure class="code">
+<pre class="write-js-code">
+<span class="comment">****************************** In JS ******************************</span>
+const rootElement = document.getElementById('root');
+<span class="comment">****************************** In React ******************************</span>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+</pre>
+</figure>
+<!--**************************** CODE BLOCK END ****************************-->
+<p class="mb-10"><strong>react-dom.development.js</strong> gives an object ReactDOM. It has a function named createRoot which helps to select an element, similar like document.getElementById.</p>
+<br/>
+    </li>
+    <li>
+<p><span class="highlight">Insert header to the root element - </span> </p>
+<!--**************************** CODE BLOCK START ****************************-->
+<figure class="code">
+<pre class="write-js-code">
+<span class="comment">****************************** In JS ******************************</span>
+rootElement.appendChild(header);
+<span class="comment">****************************** In React ******************************</span>
+root.render(header);
+</pre>
+</figure>
+<!--**************************** CODE BLOCK END ****************************-->
+<p class="mb-10">ReactDOM has another function named render which helps insert one element to another element, smae like appendChild.</p>
+    </li>
+</ul>
+<p class="disclaimer mt-15">See, this is very easy and very basic concept of React. Don't be stopped. Keep going. Go to next topic to reveal more super-powers of React. Best of luck.</p>
+
+<div class="footer">
+    <div id="footerPrevTopicButton">Previous Topic</div>
+    <div id="footerNextTopicButton">Next Topic</div>
+    <script>
+        initiateNextTopicButton();
+    </script>
+</div>
+</div>  
+

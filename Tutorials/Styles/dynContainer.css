@@ -1,0 +1,116 @@
+#reactDynContainer h1 {
+  margin: 10px 0px;
+  color: #00c0ff;
+}
+
+#reactDynContainer ul {
+  margin-left: 30px;
+}
+
+#reactDynContainer p {
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-size: 15px;
+}
+
+#reactDynContainer p.highlight {
+  color: #ff9d00;
+  font-size: 30px !important;
+}
+
+#reactDynContainer p.comment {
+  margin: 5px 0px 0px;
+  font-size: 15px;
+  color: #b4b4b4 !important;
+}
+
+#reactDynContainer p.disclaimer {
+  color: #00c0ff;
+  font-size: 20px;
+  font-family: cursive;
+  font-style: italic;
+}
+
+#reactDynContainer span.highlight {
+  color: #ff9d00;
+  font-size: 17px !important;
+}
+
+#reactDynContainer a {
+  color: #00ffd9;
+}
+
+#reactDynContainer figure {
+  overflow: scroll;
+}
+
+#reactDynContainer figure.code {
+  background: black;
+  border-left: 5px solid #00c0ff;
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+  padding: 30px 20px;
+}
+
+#reactDynContainer figure pre {
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+#reactDynContainer figure pre span {
+  color: #b4b4b4 !important;
+}
+
+#reactDynContainer figure pre.write-html-code {
+  color: #ff9d00;
+}
+
+#reactDynContainer figure pre.write-js-code {
+  color: #00c0ff;
+}
+
+#reactDynContainer .mb-5 {
+  margin-bottom: 5px;
+}
+
+#reactDynContainer .mb-10 {
+  margin-bottom: 10px;
+}
+
+#reactDynContainer .mt-15 {
+  margin-top: 15px;
+}
+
+#reactDynContainer .footer {
+  padding: 50px 0px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#reactDynContainer .footer div {
+  color: #00c0ff;
+  background: black;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 15px #00c0ff;
+          box-shadow: 0px 0px 15px #00c0ff;
+}
+
+#reactDynContainer .footer div#footerPrevTopicButton {
+  margin-right: 20px;
+  color: white;
+}
+
+#reactDynContainer .footer div:hover {
+  -webkit-box-shadow: 0px 0px 30px #00c0ff;
+          box-shadow: 0px 0px 30px #00c0ff;
+}
+/*# sourceMappingURL=dynContainer.css.map */

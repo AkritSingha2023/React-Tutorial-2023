@@ -1,0 +1,294 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.reactroot {
+  background: #23272f;
+  background-image: url("../Tutorials/ExternalUtils/images/image_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.reactroot .reactHeading {
+  color: #00c0ff;
+  background: #071730;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 10px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 300px;
+}
+
+.reactroot .reactHeading .arrowBtn {
+  background: #00c0ff;
+  border-radius: 5px;
+}
+
+.reactroot .reactHeading .arrowBtn .arrowIcon {
+  border-right: 15px solid #071730;
+}
+
+.reactroot .reactHeading .openFixedArrowBtn {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 90;
+}
+
+.reactroot .reacContainertWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reactroot .reacContainertWrapper .reactNavContainer {
+  width: 180px;
+  height: calc(100vh - 50px);
+  background: #272727;
+  border-right: 1px solid #005976;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.reactroot .reacContainertWrapper .reactNavContainer.close {
+  width: 0px;
+  overflow: hidden;
+  border: none;
+  min-width: 0px;
+}
+
+.reactroot .reacContainertWrapper .reactNavContainer.close .directory_list {
+  display: none;
+}
+
+.reactroot .reacContainertWrapper .file-path {
+  position: absolute;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  right: 0;
+  color: #7c7c7c;
+  display: none;
+  cursor: pointer;
+}
+
+.reactroot .reacContainertWrapper .file-path:hover {
+  color: #4b879c;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator {
+  min-width: 300px;
+  height: 100vh;
+  overflow: auto;
+  background: #000000;
+  color: #ffffff;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator .directory_list {
+  margin: 0;
+  padding-left: 35px;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator .directory_list ul {
+  margin-left: 10px;
+  padding-left: 20px;
+  border-left: 1px dashed #00c0ff;
+  margin: 0;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator .directory_list ul li {
+  list-style: none;
+  padding-left: 10px;
+  font-size: 17px;
+  position: relative;
+  font-weight: normal;
+  cursor: pointer;
+  position: relative;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator .directory_list ul li:before {
+  position: absolute;
+  left: -20px;
+  content: "";
+  height: 20px;
+  vertical-align: middle;
+  width: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator .directory_list a {
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator .directory_list .folder {
+  margin: 10px 10px 10px 5px;
+  border-radius: 10px;
+  padding: 4px 0px 2px 5px;
+  color: #aaaaaa;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator .directory_list .folder a {
+  font-weight: bold;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator .directory_list .folder:before {
+  /* folder icon if folder class is specified */
+  background-image: url("https://static.toiimg.com/thumb/imgsize-7002,msid-101602589,width-25,resizemode-4/100444019.jpg");
+  background-position: center top;
+  background-size: 75% auto;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator .directory_list .folder.active {
+  color: #ffffff;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator .directory_list .file {
+  margin: 10px 10px 10px 5px;
+  font-size: 16px;
+  color: #f1f1f1;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator .directory_list .file:before {
+  /* file icon if file class is specified */
+  background-image: url("https://static.toiimg.com/thumb/imgsize-7002,msid-101602591,width-25,resizemode-4/100444019.jpg");
+  background-position: center 2px;
+  background-size: 60% auto;
+}
+
+.reactroot .reacContainertWrapper .fileNavigator .directory_list .file.active {
+  color: #00c0ff;
+  border-right: 1px solid #ffffff;
+}
+
+.reactroot .reacContainertWrapper .reactDynContainerWrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.reactroot .reacContainertWrapper .reactDynContainerWrapper .siteHeader {
+  height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: black;
+  -webkit-box-shadow: 1px 1px 20px #00c0ff;
+          box-shadow: 1px 1px 20px #00c0ff;
+  padding: 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reactroot .reacContainertWrapper .reactDynContainerWrapper .siteHeader .pageNavigator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reactroot .reacContainertWrapper .reactDynContainerWrapper .siteHeader .pageNavigator .arrowBtn {
+  margin: 0px 5px;
+}
+
+.reactroot .reacContainertWrapper .reactDynContainerWrapper .siteHeader .pageNavigator .arrowBtn .arrowIcon {
+  border-right: 15px solid #00c0ff;
+}
+
+.reactroot .reacContainertWrapper .reactDynContainerWrapper .siteHeader .pageNavigator .arrowBtn:hover {
+  background: #05398b;
+}
+
+.reactroot .reacContainertWrapper .reactDynContainerWrapper .siteHeader .sitelogo {
+  color: #00c0ff;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 10px;
+}
+
+.reactroot .reacContainertWrapper .reactDynContainerWrapper #reactDynContainer {
+  color: white;
+  width: 100%;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: rgba(0, 0, 0, 0.555);
+  padding: 30px 20px 30px;
+}
+
+.d-none {
+  display: none;
+}
+
+.arrowBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #003662;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.arrowBtn .arrowIcon {
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+  border-top: 10px solid transparent;
+  border-right: 15px solid #00c0ff;
+  border-bottom: 10px solid transparent;
+}
+
+.arrowBtn.right {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="837.583 401.568 571 571" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient gradientTransform="matrix(1 0 0 1 0 0)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="839.583" x2="1406.58" y1="687.068" y2="687.068">
+<stop offset="0" stop-color="#00c0ff"/>
+<stop offset="1" stop-color="#51dffa"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(1 0 0 1 0 0)" gradientUnits="userSpaceOnUse" id="LinearGradient_2" x1="954.017" x2="1294.22" y1="678.366" y2="678.366">
+<stop offset="0" stop-color="#00c0ff"/>
+<stop offset="1" stop-color="#62d7fd"/>
+</linearGradient>
+</defs>
+<g id="Layer-1" vectornator:layerName="Layer 1">
+<path d="M839.583 468.048C839.583 432.437 868.452 403.568 904.063 403.568L1342.1 403.568C1377.71 403.568 1406.58 432.437 1406.58 468.048L1406.58 906.087C1406.58 941.699 1377.71 970.568 1342.1 970.568L904.063 970.568C868.452 970.568 839.583 941.699 839.583 906.087L839.583 468.048Z" fill="url(#LinearGradient)" fill-rule="nonzero" opacity="1" stroke="#00c0ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="4" vectornator:layerName="Rectangle 1"/>
+<path d="M954.017 678.366C954.017 584.422 1030.17 508.266 1124.12 508.266C1218.06 508.266 1294.22 584.422 1294.22 678.366C1294.22 772.309 1218.06 848.466 1124.12 848.466C1030.17 848.466 954.017 772.309 954.017 678.366Z" fill="url(#LinearGradient_2)" fill-rule="nonzero" opacity="1" stroke="#014d65" stroke-linecap="butt" stroke-linejoin="round" stroke-width="82" vectornator:layerName="Oval 1"/>
+<path d="M916.416 716.693L886.331 507.614C886.331 507.614 879.925 469.956 895.136 455.475C910.346 440.993 944.657 446.242 944.657 446.242L1140.38 467.847L916.416 716.693Z" fill="#014d65" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Curve 1"/>
+<path d="M1333.32 648.622L1355.28 858.709C1355.28 858.709 1360.22 896.586 1344.46 910.468C1328.7 924.349 1294.62 917.776 1294.62 917.776L1099.89 888.606L1333.32 648.622Z" fill="#014d65" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Curve 2"/>
+</g>
+</svg>
